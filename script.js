@@ -62,7 +62,6 @@ navLine.forEach(linee => {
                 body.style.backgroundColor = "white"
                 html.style.backgroundColor = "white"
                 container.style.backgroundColor = "white"
-
             }
         })
 
@@ -70,8 +69,6 @@ navLine.forEach(linee => {
     }); // navone "a" tag
 
 }); // navone line
-
-
 
 
 // navtwo
@@ -316,7 +313,7 @@ const showA = showBox.querySelectorAll("a")
 
 const myshowA = Array.from(showA)
 
-console.log(myshowA);
+// console.log(myshowA);
 
 myshowA.filter( (e) => {
     // console.log(e);
@@ -389,24 +386,18 @@ const lastHover = document.querySelector(".nav-item")
 
 const link = lastHover.querySelector("a")
 
-
-
 link.addEventListener("mousemove", () => {
-
     footerLink.style.display = "inline Grid"
 })
 
 link.addEventListener("mouseout", () => {
-    
     footerLink.style.display = "none"
 })
 
 footerLink.addEventListener("mousemove", () => {
     footerLink.style.display = "inline Grid"
-
 })
 
 footerLink.addEventListener("mouseout", () => {
     footerLink.style.display = "none"
-
 })

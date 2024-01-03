@@ -89,4 +89,33 @@ navLine.forEach(linee => {
 
 }); // navone line
 
+});
+
+// footer box mouseOver
+
+const footerLink = document.querySelector(".nav-all-link")
+
+// console.log(footerLink);
+
+const lastHover = document.querySelector(".nav-item")
+
+const link = lastHover.querySelector("a")
+
+link.addEventListener("mousemove", () => {
+    footerLink.style.display = "inline Grid"
 })
+
+link.addEventListener("mouseout", () => {
+    footerLink.style.display = "none"
+})
+
+footerLink.addEventListener("mousemove", () => {
+    footerLink.style.display = "inline Grid"
+})
+
+footerLink.addEventListener("mouseout", () => {
+    footerLink.style.display = "none"
+});
+
+// shoes color change
+

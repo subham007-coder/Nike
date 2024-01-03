@@ -46,7 +46,7 @@ body {
     /* background-color: red; */
 }
 
-#main .right2-nav .card2{
+#main .right2-nav .card2 {
     cursor: pointer;
     /* background-color: aqua; */
     display: flex;
@@ -54,21 +54,37 @@ body {
     width: 300px;
 }
 
-#main .right2-nav .card2 .img img{
+#main .right2-nav .card2 .img img {
     width: 20vw;
     height: 20vw;
 }
 
-.orange{
+.orange {
     color: #A03905;
     font-weight: 600;
 }
 
-.dark{
+.dark {
     font-weight: 500;
 }
 
-.greay{
+.greay {
     opacity: 0.4;
     font-weight: 500;
+}
+
+.mouseOver-img {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    gap: 5px;
+    display: none;
+}
+
+.mouseOver-img img {
+    width: 100%;
+}
+
+.hide {
+    display: block;
 }

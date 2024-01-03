@@ -78,7 +78,8 @@ body {
     height: 40px;
     width: 40px;
     gap: 5px;
-    display: none;
+    opacity: 0;
+    transition: all linear 0.3s;
 }
 
 .mouseOver-img img {
@@ -87,4 +88,17 @@ body {
 
 .hide {
     display: block;
+}
+
+#main .right2-nav .card2:hover{
+    .hide {
+        display: none;
+    }
+    .mouseOver-img {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        gap: 5px;
+        opacity: 1;
+    }
 }

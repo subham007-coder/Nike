@@ -118,20 +118,24 @@ footerLink.addEventListener("mouseout", () => {
 });
 
 // shoes color change
-let mainImg = document.querySelectorAll("#main-img")
+let mainImg = document.querySelectorAll("#main-img");
 
 let imgArr = Array.from(mainImg);
 
 let whiteShoes = document.querySelectorAll(".white-shoes");
 let blackShoes = document.querySelectorAll(".black-shoes");
+let greenShoes = document.querySelectorAll(".green-shoes");
 
 
 whiteShoes.forEach((e) => {
-    e.addEventListener("mouseover", () => {
-        console.log("i am white shose");
+    e.addEventListener("mouseover", (ee) => {
         imgArr[0].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoes-WrLlWX.png"
 
         imgArr[1].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7a83d03e-80eb-4759-9f7d-6b265a5fcb55/blazer-low-77-vintage-shoes-5Gw9TZ.png"
+
+        imgArr[2].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/71dcb3f8-76cf-4bae-8fa0-e16bc6f2872c/air-max-90-shoes-0MB5rJ.png"
+
+        imgArr[3].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c9779878-0999-4ff7-8d6d-46e05bd37346/waffle-debut-shoes-4j1X82.png"
     })
 })
 
@@ -142,10 +146,14 @@ blackShoes.forEach((e) => {
         imgArr[0].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/21d38052-598b-44f6-a857-123c9f72b015/air-force-1-07-shoes-WrLlWX.png"
 
         imgArr[1].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/600fc4b5-3b5e-4c10-8145-ed04773bbd53/blazer-low-77-vintage-shoes-5Gw9TZ.png"
+
+        imgArr[2].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ae178e75-38aa-4212-ba98-3f2d45b7ac13/air-max-90-shoes-0MB5rJ.png"
+
+        imgArr[3].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7ee9fbf8-b6b9-453f-960c-0d67313edbe0/waffle-debut-shoes-4j1X82.png"
     })
 })
 
-blackShoes.forEach((e) => {
+greenShoes.forEach((e) => {
     e.addEventListener("mouseover", () => {
         console.log("i am black green");
         imgArr[1].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1ef5e709-2a24-4385-9457-7ef8ed4d917f/blazer-low-77-vintage-shoes-5Gw9TZ.png"

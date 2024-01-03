@@ -120,6 +120,8 @@ footerLink.addEventListener("mouseout", () => {
 // shoes color change
 let mainImg = document.querySelectorAll("#main-img")
 
+let imgArr = Array.from(mainImg);
+
 let whiteShoes = document.querySelectorAll(".white-shoes");
 let blackShoes = document.querySelectorAll(".black-shoes");
 
@@ -127,6 +129,9 @@ let blackShoes = document.querySelectorAll(".black-shoes");
 whiteShoes.forEach((e) => {
     e.addEventListener("mouseover", () => {
         console.log("i am white shose");
+        imgArr[0].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoes-WrLlWX.png"
+
+        imgArr[1].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7a83d03e-80eb-4759-9f7d-6b265a5fcb55/blazer-low-77-vintage-shoes-5Gw9TZ.png"
     })
 })
 
@@ -134,5 +139,15 @@ whiteShoes.forEach((e) => {
 blackShoes.forEach((e) => {
     e.addEventListener("mouseover", () => {
         console.log("i am black shose");
+        imgArr[0].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/21d38052-598b-44f6-a857-123c9f72b015/air-force-1-07-shoes-WrLlWX.png"
+
+        imgArr[1].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/600fc4b5-3b5e-4c10-8145-ed04773bbd53/blazer-low-77-vintage-shoes-5Gw9TZ.png"
+    })
+})
+
+blackShoes.forEach((e) => {
+    e.addEventListener("mouseover", () => {
+        console.log("i am black green");
+        imgArr[1].src = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1ef5e709-2a24-4385-9457-7ef8ed4d917f/blazer-low-77-vintage-shoes-5Gw9TZ.png"
     })
 })
